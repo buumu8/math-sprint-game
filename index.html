@@ -28,9 +28,8 @@
                 name="questions"
                 value="10"
               /><span class="best-score"
-                ><span>Best Score</span
-                ><span class="best-score-value">0.0s</span></span
-              >
+                ><span>Best Score</span><span class="best-score-value"></span
+              ></span>
             </div>
             <!-- 25 Questions Radio Input -->
             <div class="radio-container">
@@ -41,9 +40,8 @@
                 name="questions"
                 value="25"
               /><span class="best-score"
-                ><span>Best Score</span
-                ><span class="best-score-value">0.0s</span></span
-              >
+                ><span>Best Score</span><span class="best-score-value"></span
+              ></span>
             </div>
             <!-- 50 Questions Radio Input -->
             <div class="radio-container">
@@ -54,9 +52,8 @@
                 name="questions"
                 value="50"
               /><span class="best-score"
-                ><span>Best Score</span
-                ><span class="best-score-value">0.0s</span></span
-              >
+                ><span>Best Score</span><span class="best-score-value"></span
+              ></span>
             </div>
             <!-- 99 Questions Radio Input -->
             <div class="radio-container">
@@ -67,9 +64,8 @@
                 name="questions"
                 value="99"
               /><span class="best-score"
-                ><span>Best Score</span
-                ><span class="best-score-value">0.0s</span></span
-              >
+                ><span>Best Score</span><span class="best-score-value"></span
+              ></span>
             </div>
           </div>
           <!-- Start Button -->
@@ -81,49 +77,19 @@
 
       <!-- Countdown Page -->
       <div class="card" id="countdown-page" hidden>
-        <h1 class="countdown">3</h1>
+        <h1 class="countdown"></h1>
       </div>
 
       <!-- Game Page -->
       <div class="card" id="game-page" hidden>
         <!-- Item Container -->
         <div class="item-container">
-          <!-- <div class="selected-item"></div>
-          <div class="item">
-            <h1>1x3 = 10</h1>
-          </div>
-          <div class="item">
-            <h1>2x3 = 20</h1>
-          </div>
-          <div class="item">
-            <h1>3x3 = 30</h1>
-          </div>
-          <div class="item">
-            <h1>4x3 = 40</h1>
-          </div>
-          <div class="item">
-            <h1>5x3 = 50</h1>
-          </div>
-          <div class="item">
-            <h1>6x3 = 60</h1>
-          </div>
-          <div class="item">
-            <h1>7x3 = 70</h1>
-          </div>
-          <div class="item">
-            <h1>8x3 = 80</h1>
-          </div>
-          <div class="item">
-            <h1>9x3 = 90</h1>
-          </div>
-          <div class="item">
-            <h1>10x3 = 100</h1>
-          </div> -->
+          <!-- <div class="selected-item"></div> -->
         </div>
         <!-- Right/Wrong Buttons -->
         <div class="item-footer">
-          <button class="wrong">Wrong</button
-          ><button class="right">Right</button>
+          <button class="wrong" onclick="select(false)">Wrong</button
+          ><button class="right" onclick="select(true)">Right</button>
         </div>
       </div>
 
@@ -132,17 +98,20 @@
         <!-- Score Container -->
         <div class="score-container">
           <h1 class="title">Your Time</h1>
-          <h1 class="final-time">3.4s</h1>
-          <h1 class="base-time">Base Time: 2.4s</h1>
-          <h1 class="penalty-time">Penalty: +1.0s</h1>
+          <h1 class="final-time"></h1>
+          <h1 class="base-time"></h1>
+          <h1 class="penalty-time"></h1>
         </div>
         <!-- Play Again Button -->
         <div class="score-footer">
-          <button class="play-again">Play Again</button>
+          <button class="play-again" onclick="playAgain()" hidden>
+            Play Again
+          </button>
         </div>
       </div>
     </div>
     <!-- Script -->
+    <script src="shuffle.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
